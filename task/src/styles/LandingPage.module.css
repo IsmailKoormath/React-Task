@@ -18,10 +18,10 @@
   width: 2.25rem;
   height: 2.25rem;
   cursor: pointer;
-   transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .cross_icon:hover img {
-   transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .main_heading {
@@ -145,16 +145,39 @@
   text-align: center;
 }
 
-
-
 @media only screen and (max-width: 900px) {
   .banner_para_text {
-  padding: 0 1rem;
+    padding: 0 1rem;
+  }
+  .contact_para {
+    padding: 0 1rem;
+  }
+  .contribution_section {
+    padding: 0 1rem;
+  }
 }
-.contact_para {
-  padding: 0 1rem;
+@media only screen and (max-width: 600px) {
+  .landingPage_main {
+  padding: 8rem 5% 3rem 5%;
 }
-.contribution_section {
-  padding: 0 1rem;
+.cross_icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+.cross_icon img {
+  width: 2rem;
+  height: 2rem;
+}
+  .skype_btn {
+    padding: 0.85rem 3.5rem;
+  }
+  .contact_para {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.copyRight_text {
+  margin-top: 15rem;
+
 }
 }

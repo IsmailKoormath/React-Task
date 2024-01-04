@@ -9,3 +9,9 @@
   padding: 0.85rem 7rem;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .customButton {
+  padding: 0.85rem 5rem;
+}
+}
