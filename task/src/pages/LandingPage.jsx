@@ -4,13 +4,17 @@ import fortnite from "../assets/fortnite.png"
 import cardPic1 from "../assets/card-pic1.png"
 import cardPic2 from "../assets/card-pic2.png"
 import cardPic3 from "../assets/card-pic3.png"
+import crossIcon from "../assets/cross-icon.svg"
 import CustomButton from '../Components/CustomButton'
 import Card from '../Components/Card'
 import ContributionCard from '../Components/ContributionCard'
 
+
 const LandingPage = () => {
   return (
     <div className={classes.landingPage_main}>
+      <div className={classes.cross_icon}>
+        <img src={crossIcon} alt="Cross Icon" /></div>
       <h1 className={classes.main_heading}>Epic Games : An
         American video game and software developer and publisher
         based in Cary, North Carolina.</h1>
@@ -38,14 +42,17 @@ const LandingPage = () => {
 
         <div className={classes.contribution_card_container}>
           <ContributionCard mainText="5M" subText="Daily User Engagements " />
-          <ContributionCard mainText="$500K" subText="Revenue Surge for anPlatform"/>
-          <ContributionCard mainText="10X" subText="ROAS on all our marketing campaigns"/>
-        </div>
-        <div className={classes.contact_section}>
-          <h4 className={classes.contact_heading}>Interested in delving deeper into the project?</h4>
-          <p className={classes.contact_para}>If you'd like to explore further details about our initiatives or any of our affiliated brands, don't hesitate to connect. You can reach out to us via email at hello@abc.com or give us a call at +91 480 20802730.</p>
+          <ContributionCard mainText="$500K" subText="Revenue Surge for anPlatform" />
+          <ContributionCard mainText="10X" subText="ROAS on all our marketing campaigns" />
         </div>
       </div>
+        <div className={classes.contact_section}>
+          <h4 className={classes.contact_heading}>Interested in delving deeper into the project?</h4>
+          <p className={classes.contact_para}>If you'd like to explore further details about our initiatives or any of our affiliated brands, don't hesitate to connect. You can reach out to us via email at hello@abc.com or give us a call at <span> +91 480 20802730</span>.</p>
+          <div className={classes.btn_container}><button className={classes.skype_btn}>Ring us on Skype</button>
+            <CustomButton>Contact Us</CustomButton></div>
+        </div>
+        <span className={classes.copyRight_text}>© 2019-2023 abcTechnology Solutions Pvt. Ltd. All Rights Reserved</span>
     </div>
   )
 }

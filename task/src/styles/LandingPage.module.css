@@ -4,7 +4,26 @@
   justify-content: flex-start;
   align-items: center;
   padding: 8.5rem 10% 3.5rem 10%;
+  position: relative;
 }
+.cross_icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+}
+.cross_icon img {
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+   transition: transform 0.5s ease-in-out;
+}
+.cross_icon:hover img {
+   transform: rotate(180deg);
+}
+
 .main_heading {
   color: var(--primary-white);
   font-size: 2.25rem;
@@ -76,18 +95,66 @@
   gap: 4rem;
 }
 .contact_section {
+  margin-top: 14rem;
+  text-align: center;
 }
 .contact_heading {
   color: var(--primary-white);
-  font-size: 2.8125rem;
+  font-size: 2.25rem;
   font-weight: 300;
   line-height: 3rem; /* 106.667% */
   letter-spacing: 0.06rem;
   text-transform: capitalize;
 }
 .contact_para {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 21%;
   color: var(--primary-white);
-  font-size: 1.75rem;
+  font-size: 1.35rem;
+  font-weight: 300;
+}
+.contact_para span {
   font-weight: 500;
+}
+.btn_container {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.skype_btn {
+  background: transparent;
+  color: var(--primary-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  border: 1px solid #fff;
+  padding: 0.85rem 4.5rem;
+  cursor: pointer;
+}
+.copyRight_text {
+  margin-top: 17rem;
+  color: var(--primary-white);
+  font-size: 0.875rem;
+  font-weight: 300;
+  opacity: 0.9;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .banner_para_text {
+  padding: 0 1rem;
+}
+.contact_para {
+  padding: 0 1rem;
+}
+.contribution_section {
+  padding: 0 1rem;
+}
 }
