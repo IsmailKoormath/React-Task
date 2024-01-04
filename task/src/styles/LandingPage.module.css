@@ -34,13 +34,60 @@
   font-family: "Poppins", sans-serif;
   font-size: 0.85rem;
   font-weight: 300;
+  opacity: 0.8;
 }
 .card_section {
-    margin-top: 10rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.contribution_section {
+  margin-top: 10rem;
+  padding: 0 10rem;
+  width: 100%;
+  text-align: center;
+}
+.contribution_heading {
+  color: var(--primary-white);
+  font-size: 2.2rem;
+  font-weight: 200;
+  line-height: 3rem; /* 114.286% */
+  text-transform: capitalize;
+}
+.contribution_para {
+  margin-top: 1rem;
+  color: var(--primary-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.contribution_card_container {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.contact_section {
+}
+.contact_heading {
+  color: var(--primary-white);
+  font-size: 2.8125rem;
+  font-weight: 300;
+  line-height: 3rem; /* 106.667% */
+  letter-spacing: 0.06rem;
+  text-transform: capitalize;
+}
+.contact_para {
+  margin-top: 1rem;
+  color: var(--primary-white);
+  font-size: 1.75rem;
+  font-weight: 500;
 }

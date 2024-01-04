@@ -1,0 +1,14 @@
+.ContributionCard {
+  width: 15rem;
+}
+.main_text {
+  color: var(--primary-white);
+  font-size: 4rem;
+  font-weight: 200;
+}
+.sub_text {
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
